@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kahve Menüsü</title>
+  
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+<style> * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+header, nav {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}</style>
+
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans mt-20">
+
+<nav class="sticky top-0 bg-white text-gray-800 shadow-md z-50">
+  <div class="max-w-4xl mx-auto px-4">
+    <div class="flex flex-wrap justify-center space-x-4 py-3">
+      <a href="#hot-coffee" data-tr="Sıcak Kahveler" data-en="Hot Coffees" class="text-gray-700 text-shadow text-shadow-hover hover:text-amber-600 font-medium transition">Sıcak Kahveler</a>
+      <a href="#cold-coffee" data-tr="Soğuk Kahveler" data-en="Iced Coffees" class="text-gray-700 text-shadow text-shadow-hover hover:text-amber-600 font-medium transition">Soğuk Kahveler</a>
+      <a href="#desserts" data-tr="Tatlılar" data-en="Desserts" class="text-gray-700 text-shadow text-shadow-hover hover:text-amber-600 font-medium transition">Tatlılar</a>
+      <a href="#about" data-tr="Hakkımızda" data-en="About Us" class="text-gray-700 text-shadow text-shadow-hover hover:text-amber-600 font-medium transition">Hakkımızda</a>
+      <a href="#contact" data-tr="İletişim" data-en="Contact" class="text-gray-700 text-shadow text-shadow-hover hover:text-amber-600 font-medium transition">İletişim</a>
+    </div>
+  </div>
+</nav>
+
+  <div class="relative mx-10 my-10 mt-5 rounded-lg overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" class="w-full h-64 object-cover" alt="Coffee Banner">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center">
+      <h1 class="text-white text-4xl font-bold">Kahve Menüsü</h1>
+      <p class="text-gray-200 mt-2 text-lg">Modern & Minimalist Coffee Experience</p>
+    </div>
+  </div>
+
+  <div class="flex justify-center space-x-4 my-6">
+  <button id="trBtn" class="px-4 py-2 rounded-lg">TR</button>
+  <button id="enBtn" class="px-4 py-2 rounded-lg">ENG</button>
+</div>
+
+  <section id="hot-coffee" class="max-w-md mx-auto mb-10 scroll-mt-24">
+    <h2 class="text-2xl font-bold mb-4 text-center" data-tr="Sıcak Kahveler" data-en="Hot Coffees">Sıcak Kahveler</h2>
+    <div class="space-y-6">
+      
+      <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center">
+        <img src="Espresso.png" class="rounded-lg w-48 h-48 object-cover mb-3">
+        <h3 class="font-semibold" data-tr="Espresso" data-en="Espresso">Espresso</h3>
+        <p class="text-sm text-gray-500" data-tr="Yoğun aromalı tek shot kahve." data-en="Strong and rich single shot coffee.">Yoğun aromalı tek shot kahve.</p>
+        <span class="font-semibold mt-1" data-tr="₺60.00" data-en="€2.50">₺60.00</span>
+      </div>
+      
+      <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center">
+        <img src="Latte.png" class="rounded-lg w-48 h-48 object-cover mb-3">
+        <h3 class="font-semibold" data-tr="Latte" data-en="Latte">Latte</h3>
+        <p class="text-sm text-gray-500" data-tr="Sütle harmanlanmış yumuşak içimli kahve." data-en="Smooth coffee blended with milk.">Sütle harmanlanmış yumuşak içimli kahve.</p>
+        <span class="font-semibold mt-1" data-tr="₺85.00" data-en="€3.50">₺85.00</span>
+      </div>
+      
+      <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center">
+        <img src="Cappuccino.png" class="rounded-lg w-48 h-48 object-cover mb-3">
+        <h3 class="font-semibold" data-tr="Cappuccino" data-en="Cappuccino">Cappuccino</h3>
+        <p class="text-sm text-gray-500" data-tr="Köpüklü sütle zenginleştirilmiş klasik kahve." data-en="Classic coffee topped with foamed milk.">Köpüklü sütle zenginleştirilmiş klasik kahve.</p>
+        <span class="font-semibold mt-1" data-tr="₺90.00" data-en="€3.80">₺90.00</span>
+      </div>
+      
+      <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center">
+        <img src="Mocha.png" class="rounded-lg w-48 h-48 object-cover mb-3">
+        <h3 class="font-semibold" data-tr="Mocha" data-en="Mocha">Mocha</h3>
+        <p class="text-sm text-gray-500" data-tr="Çikolata aromalı sütlü kahve." data-en="Chocolate flavored milk coffee.">Çikolata aromalı sütlü kahve.</p>
+        <span class="font-semibold mt-1" data-tr="₺100.00" data-en="€4.20">₺100.00</span>
+      </div>
+
+      <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center">
+        <img src="Flat White.png" class="rounded-lg w-48 h-48 object-cover mb-3">
+        <h3 class="font-semibold" data-tr="Flat White" data-en="Flat White">Flat White</h3>
+        <p class="text-sm text-gray-500" data-tr="İnce süt köpüğüyle yumuşak kahve." data-en="Smooth coffee with microfoam milk.">İnce süt köpüğüyle yumuşak kahve.</p>
+        <span class="font-semibold mt-1" data-tr="₺95.00" data-en="€3.90">₺95.00</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="cold-coffee" class="max-w-md mx-auto mb-10 scroll-mt-24">
+    <h2 class="text-2xl font-bold mb-4 text-center" data-tr="Soğuk Kahveler" data-en="Iced Coffees">Soğuk Kahveler</h2>
+    <div class="space-y-6">
+      
+      <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center">
+        <img src="Iced Latte.png" class="rounded-lg w-48 h-48 object-cover mb-3">
+        <h3 class="font-semibold" data-tr="Iced Latte" data-en="Iced Latte">Iced Latte</h3>
+        <p class="text-sm text-gray-500" data-tr="Soğuk sütle hazırlanmış espresso." data-en="Espresso with cold milk and ice.">Soğuk sütle hazırlanmış espresso.</p>
+        <span class="font-semibold mt-1" data-tr="₺90.00" data-en="€3.80">₺90.00</span>
+      </div>
+      
+      <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center">
+        <img src="Cold Brew.png" class="rounded-lg w-48 h-48 object-cover mb-3">
+        <h3 class="font-semibold" data-tr="Cold Brew" data-en="Cold Brew">Cold Brew</h3>
+        <p class="text-sm text-gray-500" data-tr="Uzun demleme süresiyle yumuşak içim." data-en="Smooth coffee brewed cold for hours.">Uzun demleme süresiyle yumuşak içim.</p>
+        <span class="font-semibold mt-1" data-tr="₺95.00" data-en="€4.00">₺95.00</span>
+      </div>
+      
+      <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center">
+        <img src="Iced Mocha.png" class="rounded-lg w-48 h-48 object-cover mb-3">
+        <h3 class="font-semibold" data-tr="Iced Mocha" data-en="Iced Mocha">Iced Mocha</h3>
+        <p class="text-sm text-gray-500" data-tr="Çikolata soslu buzlu kahve." data-en="Chilled mocha with chocolate syrup.">Çikolata soslu buzlu kahve.</p>
+        <span class="font-semibold mt-1" data-tr="₺110.00" data-en="€4.50">₺110.00</span>
+      </div>
+
+      <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center">
+        <img src="Frappe.png" class="rounded-lg w-48 h-48 object-cover mb-3">
+        <h3 class="font-semibold" data-tr="Frappe" data-en="Frappe">Frappe</h3>
+        <p class="text-sm text-gray-500" data-tr="Yunan usulü köpüklü buzlu kahve." data-en="Greek-style frothy iced coffee.">Yunan usulü köpüklü buzlu kahve.</p>
+        <span class="font-semibold mt-1" data-tr="₺105.00" data-en="€4.30">₺105.00</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="desserts" class="max-w-md mx-auto mb-10 scroll-mt-24">
+    <h2 class="text-2xl font-bold mb-4 text-center" data-tr="Tatlılar" data-en="Desserts">Tatlılar</h2>
+    <div class="space-y-6">
+      
+      <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center">
+        <img src="Cheesecake.png" class="rounded-lg w-48 h-48 object-cover mb-3">
+        <h3 class="font-semibold" data-tr="Cheesecake" data-en="Cheesecake">Cheesecake</h3>
+        <p class="text-sm text-gray-500" data-tr="Yumuşak krem peynirli tatlı." data-en="Soft cream cheese dessert.">Yumuşak krem peynirli tatlı.</p>
+        <span class="font-semibold mt-1" data-tr="₺120.00" data-en="€4.50">₺120.00</span>
+      </div>
+      
+      <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587" class="rounded-lg w-48 h-48 object-cover mb-3">
+        <h3 class="font-semibold" data-tr="Brownie" data-en="Brownie">Brownie</h3>
+        <p class="text-sm text-gray-500" data-tr="Yoğun çikolatalı kek dilimi." data-en="Rich chocolate cake slice.">Yoğun çikolatalı kek dilimi.</p>
+        <span class="font-semibold mt-1" data-tr="₺95.00" data-en="€3.90">₺95.00</span>
+      </div>
+      
+      <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center">
+        <img src="Brownie.png" class="rounded-lg w-48 h-48 object-cover mb-3">
+        <h3 class="font-semibold" data-tr="Tiramisu" data-en="Tiramisu">Tiramisu</h3>
+        <p class="text-sm text-gray-500" data-tr="Kahveli mascarpone tatlısı." data-en="Coffee-flavored mascarpone dessert.">Kahveli mascarpone tatlısı.</p>
+        <span class="font-semibold mt-1" data-tr="₺110.00" data-en="€4.20">₺110.00</span>
+      </div>
+      
+      <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center">
+        <img src="Kruvasan.png" class="rounded-lg w-48 h-48 object-cover mb-3">
+        <h3 class="font-semibold" data-tr="Croissant" data-en="Croissant">Croissant</h3>
+        <p class="text-sm text-gray-500" data-tr="Tereyağlı gevrek hamur." data-en="Buttery, flaky pastry.">Tereyağlı gevrek hamur.</p>
+        <span class="font-semibold mt-1" data-tr="₺70.00" data-en="€2.80">₺70.00</span>
+      </div>
+      
+      <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center">
+        <img src="Makaron.png" class="rounded-lg w-48 h-48 object-cover mb-3">
+        <h3 class="font-semibold" data-tr="Macaron" data-en="Macaron">Macaron</h3>
+        <p class="text-sm text-gray-500" data-tr="Renkli bademli tatlı." data-en="Colorful almond-based treat.">Renkli bademli tatlı.</p>
+        <span class="font-semibold mt-1" data-tr="₺45.00" data-en="€1.80">₺45.00</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US -->
+    <section id="about" class="bg-gray-50 py-12 px-6 text-center scroll-mt-24">
+    <h2 class="text-2xl font-semibold mb-4">About Us / Hakkımızda</h2>
+    <p class="max-w-2xl mx-auto text-gray-600">
+      Minimal Café was born from a passion for authentic coffee and slow moments.  
+      We believe in simplicity, quality, and genuine connection — one cup at a time.  
+      <br><br>
+      Minimal Café, sade ama özenli anların buluşma noktasıdır.  
+      Kaliteli kahve, samimi atmosfer ve iyi hislerle dolu bir deneyim sunar.
+    </p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-12 px-6 text-center scroll-mt-24">
+    <h2 class="text-2xl font-semibold mb-4">Contact / İletişim</h2>
+    <p class="text-gray-600">📍 Atatürk Blvd. No:45, Ankara</p>
+    <p class="text-gray-600">📞 +90 312 555 55 55</p>
+    <p class="text-gray-600">✉️ hello@minimalcafe.com</p>
+    <p class="text-gray-600">
+      📸 <a href="https://instagram.com/minimalcafe" target="_blank" class="underline hover:text-gray-500">@minimalcafe</a>
+    </p>
+  </section>
+
+   <footer class="text-center text-gray-400 text-sm py-4 border-t">
+    © 2025 Minimal Café. All rights reserved.
+  </footer>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const trBtn = document.getElementById('trBtn');
+    const enBtn = document.getElementById('enBtn');
+    const elements = document.querySelectorAll('[data-tr]');
+
+    function setLang(lang) {
+      elements.forEach(el => {
+        const text = el.getAttribute(`data-${lang}`);
+        if (text) el.textContent = text;
+      });
+
+       if (lang === 'tr') {
+    trBtn.classList.add('bg-black', 'text-white');
+    trBtn.classList.remove('bg-gray-200', 'text-black');
+    enBtn.classList.remove('bg-black', 'text-white');
+    enBtn.classList.add('bg-gray-200', 'text-black');
+  } else {
+    enBtn.classList.add('bg-black', 'text-white');
+    enBtn.classList.remove('bg-gray-200', 'text-black');
+    trBtn.classList.remove('bg-black', 'text-white');
+    trBtn.classList.add('bg-gray-200', 'text-black');
+  }
+    }
+
+    trBtn.addEventListener('click', () => setLang('tr'));
+    enBtn.addEventListener('click', () => setLang('en'));
+    setLang('tr'); // Sayfa ilk açıldığında Türkçe
+  });
+</script>
+
+
+</body>
+</html>
